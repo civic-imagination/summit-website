@@ -1,8 +1,8 @@
 title: Civic Futures Summit / Central Texas - October 1-2, 2019
 description: We’re bringing together governments and universities across central texas to celebrate and share skills and ideas for the future of state and local government
 
-repository: benguhin/summit-website-dev.git
-github.pages_hostname: http://summit-dev.benguhin.com
+repository: civic-imagination/summit-website.git
+github.pages_hostname: https://civicfutures.io
 
 markdown: kramdown
 highlighter: rouge
@@ -11,7 +11,7 @@ redcarpet:
 
 baseurl: /
 port: 4060
-url: //summit-dev.benguhin.com
+url: //civicfutures.io
 twitter_handle: civicimagination
 
 
