@@ -7,7 +7,8 @@ body-class: team
   Team member object:
   - page.title
   - page.permalink
-  - page.position
+  - page.teamname
+  - page.organization
   - page.img (example.jpg)
   - page.linkedin (full url)
   - page.twitter (full url)
@@ -22,7 +23,7 @@ body-class: team
     <div class="u__container">
       <header class="team__member__header container">
         <h1 class="team__member__title h2 offset-sm-4">{{ page.title }}</h1>
-        <p class="team__member__position h5 offset-sm-4">{{ page.position }}</p>
+        <p class="team__member__organization h5 offset-sm-4">{{ page.organization }}</p>
       </header>
     </div>
     <article class="container u__container">
