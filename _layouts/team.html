@@ -5,6 +5,7 @@ body-class: team
 {% comment %}
 
   Team member object:
+  - page.category
   - page.title
   - page.permalink
   - page.organization
@@ -32,26 +33,26 @@ body-class: team
          <img class="img-fluid" src="{{ '/' | relative_url }}assets/img/team/{{ page.img }}" alt="">
         </div>
         <h1 class="h2 col-lg-10">{{ page.title }}</h1>
-        <h3 class="h4 col-lg-10">{{ page.organization }}</h3>
+        <h3 class="h4 col-lg-10 pt-4">{{ page.organization }}</h3>
         <h4 class="h5 col-lg-10 pb-4">{{ page.teamname }}</h4>
     </div>
     <article class="container u__container">
       <div class="row">
 
         <div class="col-sm-8 col-lg-7">
-          <h5>The problem</h5>
+          <h5 class="pt-4">The problem</h5>
           <p>{{ page.problem }}</p>
-          <h5>Solution / Approach</h5>
+          <h5 class="pt-4">Solution / Approach</h5>
           <p>{{ page.solution }}</p>
         </div>
 
       </div>
-      <div class="row">
+      <div class="row pt-4">
 
         {{ content }}
 
       </div>
-      <div class="row">
+      <div class="row pt-4 pb-4">
         <div class="col-sm-8 col-md-4 col-lg-4">
           <h5>What can make it sustainable?</h5>
           <p>{{ page.sustainable }}</p>
