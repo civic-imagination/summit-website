@@ -18,7 +18,7 @@ body-class: team
 
 {% include header.html %}
 
-<main id="content" class="layout__main team">
+<main id="content" class="layout__main bg-light">
 
   <section class="awards_profile">
     <h2>The Civic Futures Awards</h2>
@@ -26,9 +26,9 @@ body-class: team
 
     <div class="u__container">
         <img class="pb-4" src="{{ '/' | relative_url }}assets/img/team/{{ page.img }}" alt="">
-        <h1 class="h2 font-weight-light">{{ page.title }}</h1>
-        <h3 class="h4">{{ page.organization }}</h3>
-        <h4 class="h5 pb-4">{{ page.teamname }}</h4>
+        <h1 class="h2 font-weight-light col-lg-10">{{ page.title }}</h1>
+        <h3 class="h4 font-weight-light col-lg-10">{{ page.organization }}</h3>
+        <h4 class="h5 font-weight-light col-lg-10 pb-4">{{ page.teamname }}</h4>
     </div>
     <article class="container u__container">
       <div class="row">

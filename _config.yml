@@ -30,7 +30,7 @@ permalink: /blog/:year/:month/:title
 collections:
   team:
     output: true
-    permalink: /awards19/:name
+    permalink: /awards/2019/:name
   events:
     output: false
     permalink: /events/:name
