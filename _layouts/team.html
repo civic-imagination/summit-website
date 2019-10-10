@@ -9,6 +9,10 @@ body-class: team
   - page.permalink
   - page.organization
   - page.teamname
+  - page.problem
+  - page.solution
+  - page.sustainable
+  - page.advice
   - page.img (example.jpg)
   - page.linkedin (full url)
   - page.twitter (full url)
@@ -32,9 +36,31 @@ body-class: team
       <div class="row">
 
         <div class="col-sm-8 col-lg-7">
-          {{ content }}
+          <h5>The problem</h5>
+          <p>{{ page.problem }}</p>
+          <h5>Solution / Approach</h5>
+          <p>{{ page.solution }}</p>
+        </div>
+
+      </div>
+      <div class="row">
+
+        {{ content }}
+
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-lg-6">
+          <h5>What can make it sustainable?</h5>
+          <p>{{ page.sustainable }}</p>
+        </div>
+        <div class="col-sm-8 col-lg-6">
+          <h5>Advice to others</h5>
+          <p>{{ page.advice }}</p>
         </div>
       </div>
+
+
+
     </article>
   </section>
   {% comment %}
