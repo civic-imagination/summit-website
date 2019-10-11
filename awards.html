@@ -69,7 +69,7 @@ body-class: home
 
 
           <div class="col-sm pb-sm-2">
-            <a href="https://www.google.com/maps/place/Austin+Central+Library,+Austin+Public+Library/@30.2660439,-97.7542897,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b50fdcb160bd:0x6a1f19008170521c!8m2!3d30.2660439!4d-97.752101"><img class="phase-image" src="{{ '/' | relative_url }}assets/img/austin-central-taller.jpg" alt="" aria-hidden="true" /></a>
+            <a href="https://www.google.com/maps/place/Austin+Central+Library,+Austin+Public+Library/@30.2660439,-97.7542897,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b50fdcb160bd:0x6a1f19008170521c!8m2!3d30.2660439!4d-97.752101"><img class="phase-image" src="{{ '/' | relative_url }}assets/img/adler-awards.jpg" alt="" aria-hidden="true" /></a>
           </div>
 
           <div class="col-sm pb-sm-2">
@@ -80,7 +80,7 @@ body-class: home
 
             <!-- <a class="button-text-yo mx-auto pt-2" href="https://www.eventbrite.com/e/civic-futures-awards-central-texas-tickets-73352843329"><button class="btn btn-primary mc__button mx-auto text-center text-white mb-2">register on eventbrite</button></a> -->
 
-            <p class="pr-4">doors open at 5pm at austin's <a href="https://library.austintexas.gov/central-library"></a>new central library, recently featured as one of the <a href="https://time.com/collection/worlds-greatest-places-2018/">world's greatest places</a> by TIME magazine</p>
+            <p class="pr-4">doors opened at 5pm at austin's <a href="https://library.austintexas.gov/central-library"></a>new central library, recently featured as one of the <a href="https://time.com/collection/worlds-greatest-places-2018/">world's greatest places</a> by TIME magazine</p>
             <p class="pr-4">refreshments and cash bar, free and open to the public</p>
 
 
@@ -106,7 +106,7 @@ body-class: home
   <article class="u__container">
 
       <div class="row">
-        <h3 class="h3 pt-2 text-center mx-auto p-4  mb-4 border-top border-bottom border-dark">this year's awards</h3>
+        <h3 class="h3 pt-2 text-center mx-auto p-4  mb-4 border-top border-bottom border-dark">this year's categories</h3>
       </div>
 
       <div class="row">
@@ -154,7 +154,7 @@ body-class: home
   <article class="u__container">
 
     <div class="row">
-      <h3 class="h3 pt-2 text-center mx-auto p-4 border-top border-bottom border-dark">share your thoughts</h3>
+      <h3 class="h3 pt-2 text-center mx-auto p-4 border-top border-bottom border-dark">this year's honorees</h3>
 
     </div>
 
@@ -166,13 +166,21 @@ body-class: home
 
         <div class="col-md-8 col-lg-8 mx-auto">
 
-          <p class="lead text-center">to everyone who joined us, thank you for being a part of our first civic futures awards.</p>
-          <p class="text-center pt-2">we'd love to hear your thoughts!</p>
+          <p class="lead text-center">thank you to everyone who joined us for the civic futures awards</p>
+          <p class="text-center">we're excited to feature the work of the following teams</p>
 
-          <div class="mx-auto text-center">
-          <a class="button-text-yo mx-auto" href="http://bit.ly/civic-futures-feedback"><button class="btn btn-primary mc__button mx-auto text-center text-white">share feedback</button></a>
-          </div>
         </div>
+      </div>
+    </div>
+
+
+    <div class="container u__spacing team py-0">
+      <div class="row">
+        {% for member in site.team %}
+          {% if page.title != member.title %}
+            {% include team-teaser.html %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
 
