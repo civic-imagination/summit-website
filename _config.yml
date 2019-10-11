@@ -30,7 +30,7 @@ permalink: /blog/:year/:month/:title
 collections:
   team:
     output: true
-    permalink: /team/:name
+    permalink: /awards/2019/:name
   events:
     output: false
     permalink: /events/:name
@@ -43,7 +43,7 @@ exclude: ['.git',
   'CNAME',
   'LICENSE',
   'feed.xml',
-  'team/README.md'
+  'awards/README.md'
   ]
 
 
